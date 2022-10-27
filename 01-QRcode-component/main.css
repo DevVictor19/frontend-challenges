@@ -103,3 +103,14 @@ body {
   color: #7d889e;
   margin: 0 16px;
 }
+
+@media screen and (max-width: 470px) {
+  .card__qr-code {
+    background-color: #3685ff;
+  }
+
+  .card__qr-code::before,
+  .card__qr-code::after {
+    background-color: #2c7dfa;
+  }
+}
