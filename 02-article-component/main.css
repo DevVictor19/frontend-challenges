@@ -180,3 +180,9 @@ body {
   gap: 16px;
   cursor: pointer;
 }
+
+.card__tooltip-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
