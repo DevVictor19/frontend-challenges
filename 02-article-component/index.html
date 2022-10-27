@@ -16,9 +16,13 @@
   <body>
     <div id="content">
       <main class="card">
-        <div class="card__img">
-          <img src="./assets/Bitmap.png" alt="A bench with a flower jar" />
-        </div>
+        <picture class="card__img">
+          <source
+            media="(max-width: 760px)"
+            srcset="./assets/bench-modile.png"
+          />
+          <img src="./assets/bench.png" alt="A bench with a flower jar" />
+        </picture>
         <div class="card__content">
           <article class="card__text">
             <h1>
