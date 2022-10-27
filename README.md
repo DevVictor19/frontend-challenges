@@ -1,7 +1,7 @@
 # Desafios frontend
 
-### Para treinar alguns conceitos de frontend fiz alguns desafios
+### Esse repostiório foi feito com o intuito de treinar minhas skills no frontend.
 
-### As pastas estão organizadas em ordem crescente, quanto maior for o número, maior o nível de dificuldade
+### Os desafios estão organizados em ordem crescente de dificuldade.
 
-### Para visualizar na sua máquina, baixe o repositório e abra o index.html no browser
+### Baixe o repositório e abra o index.html do desafio desejado para visualizar no seu navegador, caso não queira ter esse trabalho, cada pasta de desafio conta com um preview do resultado.
