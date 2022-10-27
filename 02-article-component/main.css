@@ -34,7 +34,14 @@ body {
   border-radius: 10px;
 
   display: flex;
+}
+
+.card__img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   overflow: hidden;
+  max-width: 280px;
+  width: 100%;
 }
 
 .card__content {
@@ -66,6 +73,7 @@ body {
 }
 
 .card__actions {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,4 +113,70 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
+}
+
+.card__share-btn:hover,
+.card__share-btn:active {
+  background-color: #6e8098;
+}
+
+.card__share-btn:hover #arrow,
+.card__share-btn:active #arrow {
+  fill: #fff;
+}
+
+.card__tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -74px;
+  right: -105px;
+  width: 248px;
+  height: 55px;
+  transition: 0.5s ease-in;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+
+  box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+  border-radius: 10px;
+  background-color: #48556a;
+  z-index: 1;
+}
+
+.card__share-btn:hover + .card__tooltip,
+.card__tooltip:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card__tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #48556a transparent transparent transparent;
+}
+
+.card__tooltip p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 20px;
+  letter-spacing: 5px;
+  color: #9daec2;
+}
+
+.card__tooltip-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
 }
