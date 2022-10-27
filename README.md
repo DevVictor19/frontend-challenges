@@ -1,6 +1,6 @@
 # Desafios frontend
 
-### Esse repostiório foi feito com o intuito de treinar minhas skills no frontend.
+### Esse repositório foi feito com o intuito de treinar minhas skills no frontend.
 
 ### Os desafios estão organizados em ordem crescente de dificuldade.
 
