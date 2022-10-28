@@ -29,6 +29,46 @@ body {
   background-color: #19a1ae;
 }
 
+#content::after {
+  content: "";
+  width: 978px;
+  height: 976px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -540px;
+  left: -330px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0.0001) 0.78%,
+    #53ffee 99.94%
+  );
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  transform: rotate(-135deg);
+}
+
+#content::before {
+  content: "";
+  width: 978px;
+  height: 976px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: -697px;
+  right: -275px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0.0001) 0.78%,
+    #53ffee 99.94%
+  );
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+}
+
 .card {
   background: #ffffff;
   box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
