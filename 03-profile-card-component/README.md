@@ -2,7 +2,7 @@
 
 ## Descrição:
 
-Componente de card, simulando um profile.
+Componente de card de rede social.
 
 ## Conceitos aplicados:
 
