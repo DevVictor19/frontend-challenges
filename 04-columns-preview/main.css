@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 28px;
+  height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.preview__card--yellow {
+  background-color: #e28625;
+}
+
+.preview__card--blue {
+  background-color: #006971;
+}
+
+.preview__card--green {
+  background-color: #004140;
+}
+
+.preview__card {
+  max-width: 307px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 48px;
+  margin-left: -6px;
+}
+
+.preview__card h1 {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #f2f2f2;
+
+  margin-top: 35px;
+}
+
+.preview__card p {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+
+  margin-top: 25px;
+}
+
+.preview__vector {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+
+.preview__vector img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: -24px;
+}
+
+.preview__btn--yellow {
+  color: #e28625;
+}
+
+.preview__btn--blue {
+  color: #006971;
+}
+
+.preview__btn--green {
+  color: #004140;
+}
+
+.preview__btn {
+  border: 2px solid #ffffff;
+  background: #f2f2f2;
+  border-radius: 25px;
+  width: 146px;
+  height: 48px;
+  text-decoration: none;
+
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 25px;
+  transition: 0.3s ease-out;
+
+  margin-top: 83px;
+}
+
+.preview__btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+@media screen and (max-width: 975px) {
+  body {
+    height: auto;
+  }
+
+  .preview {
+    max-width: 620px;
+  }
+
+  .preview__card {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 669px) {
+  .preview {
+    justify-content: center;
+  }
+
+  .preview__card {
+    max-height: 442px;
+    margin-top: -8px;
+  }
+
+  .preview__btn {
+    margin-top: 25px;
+  }
+}
