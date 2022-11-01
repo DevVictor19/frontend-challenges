@@ -4,14 +4,10 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   background-color: #f2f2f2;
   font-family: "Barlow Semi Condensed", sans-serif;
-  height: inherit;
+  height: 100vh;
   padding: 0 24px 24px;
 }
 
@@ -25,15 +21,13 @@ body {
 
 #grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 255px);
-  grid-template-rows: 282px 266px;
   gap: 24px 30px; /* row column */
   grid-template-areas:
     "article1 article1 article2 article3"
     "article4 article5 article5 article3";
   justify-content: center;
   align-content: flex-end;
-  height: inherit;
+  height: 100%;
 }
 
 .article {
@@ -52,26 +46,37 @@ body {
 
 .--article-1 {
   grid-area: article1;
+  grid-row: article1;
+  max-width: 540px;
+  min-height: 282px;
   background-color: #733fc8;
 }
 
 .--article-2 {
   grid-area: article2;
+  max-width: 255px;
+  min-height: 282px;
   background-color: #48556a;
 }
 
 .--article-3 {
   grid-area: article3;
+  max-width: 255px;
+  min-height: 572px;
   background-color: #fff;
 }
 
 .--article-4 {
   grid-area: article4;
+  max-width: 255px;
+  min-height: 266px;
   background-color: #fff;
 }
 
 .--article-5 {
   grid-area: article5;
+  max-width: 540px;
+  min-height: 266px;
   background-color: #19202d;
 }
 
@@ -125,4 +130,67 @@ body {
   line-height: 11px;
   mix-blend-mode: normal;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 1090px) {
+  body {
+    height: auto;
+  }
+
+  #grid-container {
+    margin-top: 71px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  #grid-container {
+    grid-template-areas:
+      "article1 article1 article2"
+      " article4 article5 article5"
+      "article3 article3 .";
+  }
+
+  .--article-3 {
+    max-width: 540px;
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #grid-container {
+    grid-template-areas:
+      "article1 article1"
+      "article2 article4"
+      "article5 article5"
+      "article3 article3";
+  }
+
+  .article__vector {
+    right: 24px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #grid-container {
+    grid-template-areas:
+      "article1"
+      "article2"
+      "article4"
+      "article5"
+      "article3";
+  }
+
+  .--article-1,
+  .--article-2,
+  .--article-3,
+  .--article-4,
+  .--article-5 {
+    min-width: 327px;
+  }
+
+  .--article-2,
+  .--article-4 {
+    max-width: none;
+    min-height: auto;
+  }
 }
