@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #f2f2f2;
   font-family: "Barlow Semi Condensed", sans-serif;
+  height: inherit;
+  padding: 0 24px 24px;
 }
 
 .--text-white {
@@ -25,6 +31,9 @@ body {
   grid-template-areas:
     "article1 article1 article2 article3"
     "article4 article5 article5 article3";
+  justify-content: center;
+  align-content: flex-end;
+  height: inherit;
 }
 
 .article {
