@@ -6,9 +6,18 @@
 
 body {
   background-color: #f2f2f2;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-.grid-container {
+.--text-white {
+  color: #fff;
+}
+
+.--text-black {
+  color: #48556a;
+}
+
+#grid-container {
   display: grid;
   grid-template-columns: repeat(4, 255px);
   grid-template-rows: 282px 266px;
@@ -18,10 +27,18 @@ body {
     "article4 article5 article5 article3";
 }
 
-.grid-container__article {
+.article {
+  position: relative;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
   border-radius: 8px;
   width: 100%;
+  padding: 26px 32px 32px;
+}
+
+.article__vector {
+  position: absolute;
+  top: 0;
+  right: 80px;
 }
 
 .--article-1 {
@@ -47,4 +64,56 @@ body {
 .--article-5 {
   grid-area: article5;
   background-color: #19202d;
+}
+
+.article__text {
+  position: relative;
+}
+
+.article__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 24px;
+
+  margin-top: 18px;
+}
+
+.article__paragraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 18px;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+
+  margin-top: 16px;
+}
+
+.article__profile {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.article__profile-img {
+  width: 28px;
+  height: 28px;
+}
+
+.article__profile-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 13px;
+  margin-bottom: 4px;
+}
+
+.article__profile-role {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.6875rem;
+  line-height: 11px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
