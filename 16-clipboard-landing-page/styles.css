@@ -175,3 +175,12 @@ body {
 .screen__article-para {
   text-align: left;
 }
+
+.access-clipboard {
+  margin: 150px auto 0;
+  max-width: 730px;
+}
+
+.access-clipboard__title {
+  margin-bottom: 19px;
+}
