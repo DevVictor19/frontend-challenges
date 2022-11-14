@@ -54,14 +54,20 @@ body {
 .title {
   font-style: normal;
   font-weight: 600;
-  line-height: 58px;
   text-align: center;
-  letter-spacing: -0.75px;
   color: var(--gray-800);
 }
 
 .--title-lg {
   font-size: 2.875rem;
+  line-height: 58px;
+  letter-spacing: -0.75px;
+}
+
+.--title-md {
+  font-size: 2.25rem;
+  line-height: 45px;
+  letter-spacing: -0.586957px;
 }
 
 .para {
@@ -69,12 +75,17 @@ body {
   font-weight: 400;
   line-height: 30px;
   text-align: center;
-  letter-spacing: 0.15px;
   color: var(--gray-600);
 }
 
 .--para-lg {
   font-size: 1.25rem;
+  letter-spacing: 0.15px;
+}
+
+.--para-md {
+  font-size: 1.125rem;
+  letter-spacing: 0.135px;
 }
 
 .main-start {
@@ -117,4 +128,13 @@ body {
 .main-start__btn2:hover {
   background-color: var(--secondary-light);
   transform: translateY(2px);
+}
+
+.track {
+  max-width: 730px;
+  margin: 150px auto 0;
+}
+
+.track__title {
+  margin-bottom: 19px;
 }
