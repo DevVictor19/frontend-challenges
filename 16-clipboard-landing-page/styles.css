@@ -176,6 +176,14 @@ body {
   text-align: left;
 }
 
+.screen__picture {
+  max-width: 752px;
+}
+
+.screen__picture img {
+  width: 100%;
+}
+
 .access-clipboard {
   margin-top: 150px;
 
