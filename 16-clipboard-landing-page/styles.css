@@ -70,6 +70,12 @@ body {
   letter-spacing: -0.586957px;
 }
 
+.--title-sm {
+  font-size: 1.5rem;
+  line-height: 30px;
+  letter-spacing: -0.391304px;
+}
+
 .para {
   font-style: normal;
   font-weight: 400;
@@ -86,6 +92,11 @@ body {
 .--para-md {
   font-size: 1.125rem;
   letter-spacing: 0.135px;
+}
+
+.--para-sm {
+  font-size: 1rem;
+  letter-spacing: 0.12px;
 }
 
 .main-start {
@@ -137,4 +148,30 @@ body {
 
 .track__title {
   margin-bottom: 19px;
+}
+
+.screen {
+  margin-top: 80px;
+  display: flex;
+}
+
+.screen__articles {
+  margin-top: 80px;
+  margin-left: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.screen__article {
+  max-width: 350px;
+}
+
+.screen__article-title {
+  margin-bottom: 8px;
+}
+
+.screen__article-title,
+.screen__article-para {
+  text-align: left;
 }
