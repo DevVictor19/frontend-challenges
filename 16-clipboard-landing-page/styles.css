@@ -51,24 +51,30 @@ body {
   background-color: var(--secondary);
 }
 
-.title-lg {
+.title {
   font-style: normal;
   font-weight: 600;
-  font-size: 2.875rem;
   line-height: 58px;
   text-align: center;
   letter-spacing: -0.75px;
   color: var(--gray-800);
 }
 
-.para-lg {
+.--title-lg {
+  font-size: 2.875rem;
+}
+
+.para {
   font-style: normal;
   font-weight: 400;
-  font-size: 1.25rem;
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.15px;
   color: var(--gray-600);
+}
+
+.--para-lg {
+  font-size: 1.25rem;
 }
 
 .main-start {
