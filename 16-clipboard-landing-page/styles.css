@@ -208,3 +208,46 @@ body {
 .access-clipboard__picture img {
   width: 100%;
 }
+
+.workflow {
+  margin-top: 100px;
+}
+
+.workflow__info {
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+.workflow__title {
+  margin-bottom: 19px;
+}
+
+.workflow__articles {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.workflow__article {
+  max-width: 350px;
+  text-align: center;
+  height: 180px;
+}
+
+.workflow__paper {
+  margin-bottom: 40px;
+}
+
+.workflow__snippets {
+  margin-bottom: 48px;
+}
+
+.workflow__eye {
+  margin-bottom: 48px;
+}
+
+.workflow__article-title {
+  margin-bottom: 16px;
+}
