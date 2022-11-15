@@ -251,3 +251,46 @@ body {
 .workflow__article-title {
   margin-bottom: 16px;
 }
+
+.brands {
+  margin-top: 150px;
+}
+
+.brands__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  flex-wrap: wrap;
+}
+
+.brands__google {
+  background-color: var(--gray-600);
+  -webkit-mask: url(assets/google.svg) no-repeat center;
+  mask: url(assets/google.svg) no-repeat center;
+}
+
+.brands__ibm {
+  background-color: var(--gray-600);
+  -webkit-mask: url(assets/ibm.svg) no-repeat center;
+  mask: url(assets/ibm.svg) no-repeat center;
+}
+
+.brands__microsoft {
+  background-color: var(--gray-600);
+  -webkit-mask: url(assets/microsoft.svg) no-repeat center;
+  mask: url(assets/microsoft.svg) no-repeat center;
+}
+
+.brands__hewlett {
+  background-color: var(--gray-600);
+  -webkit-mask: url(assets/hewlett.svg) no-repeat center;
+  mask: url(assets/hewlett.svg) no-repeat center;
+}
+
+.brands__graphics {
+  background-color: var(--gray-600);
+  -webkit-mask: url(assets/graphics.svg) no-repeat center;
+  mask: url(assets/graphics.svg) no-repeat center;
+}
