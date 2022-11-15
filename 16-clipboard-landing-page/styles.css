@@ -6,6 +6,7 @@
   --secondary-light: rgba(97, 116, 255, 0.8);
   --gray-800: #4c545c;
   --gray-600: #9eabb2;
+  --gray-300: rgba(158, 171, 178, 0.1);
 }
 
 * {
@@ -312,4 +313,82 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+
+.main-footer {
+  padding: 40px 165px;
+  margin-top: 150px;
+  background-color: var(--gray-300);
+  mix-blend-mode: normal;
+
+  display: flex;
+  align-items: center;
+}
+
+.main-footer__shape {
+  margin-right: 135px;
+}
+
+.main-footer__links {
+  display: flex;
+  gap: 30px;
+}
+
+.main-footer__links-list {
+  list-style: none;
+}
+
+.main-footer__links-item {
+  min-width: 160px;
+  margin: 6px 0;
+}
+
+.main-footer__links-item a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.135px;
+  color: var(--gray-800);
+}
+
+.main-footer__links-item a:hover {
+  color: var(--primary);
+}
+
+.main-footer__icons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main-footer__icon--fb {
+  background-color: var(--gray-800);
+  -webkit-mask: url(assets/fb.svg) no-repeat center;
+  mask: url(assets/fb.svg) no-repeat center;
+}
+
+.main-footer__icon--fb {
+  background-color: var(--gray-800);
+  -webkit-mask: url(assets/fb.svg) no-repeat center;
+  mask: url(assets/fb.svg) no-repeat center;
+}
+
+.main-footer__icon--tw {
+  background-color: var(--gray-800);
+  -webkit-mask: url(assets/tw.svg) no-repeat center;
+  mask: url(assets/tw.svg) no-repeat center;
+}
+
+.main-footer__icon--ig {
+  background-color: var(--gray-800);
+  -webkit-mask: url(assets/ig.svg) no-repeat center;
+  mask: url(assets/ig.svg) no-repeat center;
+}
+
+.main-footer__icon--fb:hover,
+.main-footer__icon--tw:hover,
+.main-footer__icon--ig:hover {
+  background-color: var(--primary);
 }
