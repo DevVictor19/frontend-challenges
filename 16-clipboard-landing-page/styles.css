@@ -51,6 +51,18 @@ body {
   background-color: var(--secondary);
 }
 
+.main-start__btn1:hover,
+.download__btn1:hover {
+  background-color: var(--primary-light);
+  transform: translateY(2px);
+}
+
+.main-start__btn2:hover,
+.download__btn2:hover {
+  background-color: var(--secondary-light);
+  transform: translateY(2px);
+}
+
 .title {
   font-style: normal;
   font-weight: 600;
@@ -129,16 +141,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 16px;
-}
-
-.main-start__btn1:hover {
-  background-color: var(--primary-light);
-  transform: translateY(2px);
-}
-
-.main-start__btn2:hover {
-  background-color: var(--secondary-light);
-  transform: translateY(2px);
 }
 
 .track {
@@ -293,4 +295,21 @@ body {
   background-color: var(--gray-600);
   -webkit-mask: url(assets/graphics.svg) no-repeat center;
   mask: url(assets/graphics.svg) no-repeat center;
+}
+
+.download {
+  margin: 150px auto 0;
+  max-width: 730px;
+}
+
+.download__title {
+  margin-bottom: 19px;
+}
+
+.download__actions {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
