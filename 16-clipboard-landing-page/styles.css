@@ -230,13 +230,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .workflow__article {
   max-width: 350px;
   text-align: center;
-  height: 180px;
+  height: 220px;
 }
 
 .workflow__paper {
@@ -391,4 +392,201 @@ body {
 .main-footer__icon--tw:hover,
 .main-footer__icon--ig:hover {
   background-color: var(--primary);
+}
+
+@media screen and (max-width: 1250px) {
+  .main-footer {
+    padding: 40px 100px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .main-footer {
+    padding: 40px 60px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main-footer {
+    padding: 40px 32px;
+  }
+
+  .main-footer__shape {
+    margin-right: auto;
+  }
+
+  .main-footer__links-item {
+    min-width: 140px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .track {
+    margin: 160px auto 0;
+  }
+
+  .screen {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+  }
+
+  .screen__articles {
+    margin-top: 56px;
+    margin-left: 0;
+  }
+
+  .screen__picture {
+    max-width: 400px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .screen__article-title {
+    margin-bottom: 10px;
+  }
+
+  .screen__article-title,
+  .screen__article-para {
+    text-align: center;
+  }
+
+  .access-clipboard {
+    padding: 0 32px;
+    margin-top: 186px;
+  }
+
+  .access-clipboard__picture {
+    max-width: 600px;
+    object-fit: contain;
+    margin-top: 64px;
+  }
+
+  .workflow {
+    padding: 0 32px;
+    margin-top: 130px;
+  }
+
+  .workflow__articles {
+    margin-top: 90px;
+    gap: 56px;
+  }
+
+  .brands {
+    margin-top: 130px;
+  }
+
+  .download {
+    margin: 170px auto 0;
+  }
+
+  .main-footer {
+    margin-top: 170px;
+    padding: 50px 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-footer__shape {
+    margin: 0 0 40px;
+  }
+
+  .main-footer__shape img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .main-footer__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .main-footer__links-item {
+    text-align: center;
+    margin: 0 0 20px;
+  }
+
+  .main-footer__icons {
+    margin: 38px 0 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .--title-lg {
+    font-size: 2rem;
+    line-height: 40px;
+    letter-spacing: -0.521739px;
+  }
+
+  .--para-lg {
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: 0.12px;
+  }
+
+  .--title-md {
+    font-size: 1.75rem;
+    line-height: 35px;
+    letter-spacing: -0.456522px;
+  }
+
+  .--para-md {
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: 0.12px;
+  }
+
+  .--para-sm {
+    line-height: 26px;
+    letter-spacing: 0.12px;
+  }
+
+  .main-start__article,
+  .track,
+  .download {
+    padding: 0 32px;
+  }
+
+  .track__title,
+  .access-clipboard__title,
+  .download__title {
+    margin-bottom: 16px;
+  }
+
+  .screen {
+    margin-top: 65px;
+  }
+
+  .workflow__title {
+    margin-bottom: 11px;
+  }
+
+  .workflow__paper {
+    margin-bottom: 40px;
+  }
+
+  .workflow__snippets,
+  .workflow__eye {
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .main-start__actions,
+  .download__actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .btn {
+    max-width: 311px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .brands__list {
+    flex-direction: column;
+  }
 }
