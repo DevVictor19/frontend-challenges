@@ -53,13 +53,17 @@ body {
 }
 
 .main-start__btn1:hover,
-.download__btn1:hover {
+.main-start__btn1:active,
+.download__btn1:hover,
+.download__btn1:active {
   background-color: var(--primary-light);
   transform: translateY(2px);
 }
 
 .main-start__btn2:hover,
-.download__btn2:hover {
+.main-start__btn2:active,
+.download__btn2:hover,
+.download__btn2:active {
   background-color: var(--secondary-light);
   transform: translateY(2px);
 }
@@ -353,7 +357,8 @@ body {
   color: var(--gray-800);
 }
 
-.main-footer__links-item a:hover {
+.main-footer__links-item a:hover,
+.main-footer__links-item a:active {
   color: var(--primary);
 }
 
@@ -389,8 +394,11 @@ body {
 }
 
 .main-footer__icon--fb:hover,
+.main-footer__icon--fb:active,
 .main-footer__icon--tw:hover,
-.main-footer__icon--ig:hover {
+.main-footer__icon--tw:active,
+.main-footer__icon--ig:hover,
+.main-footer__icon--ig:active {
   background-color: var(--primary);
 }
 
